@@ -10,7 +10,11 @@ $link-decoration: none;
 
 // 4. Include any default map overrides here
 $custom-colors: (
-	"farve": $cyan-400,
+        "farve": $cyan-400,
+        "blå": #77B5AE,
+        "creme": #EFE5DA,
+        "grå": #2D2D2D,
+        "lysgrå": #575656,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -22,20 +26,25 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // 5. Du kan lave styling her...
 
-body{
-	font-family: 'Inter', sans-serif;
+body {
+  font-family: 'Inter', sans-serif;
 }
 
-.str{
-	width: 1440px;
-	height: 820px;
+.str {
+  width: 1440px;
+  height: 820px;
 }
 
-.iph{
-	width: 390px;
-	height: 844px;
+.iph {
+  width: 390px;
+  height: 844px;
 }
 
-.logo{
-	width: 100px;
+.logo {
+  width: 100px;
+}
+
+.page1{
+	font-weight: bold;
+
 }
