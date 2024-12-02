@@ -1,77 +1,82 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-	<meta charset="utf-8">
-	
-	<title>Climate Releaf</title>
-	
-	<meta name="robots" content="All">
-	<meta name="author" content="Udgiver">
-	<meta name="copyright" content="Information om copyright">
-	
-	<link href="css/styles.css" rel="stylesheet" type="text/css">
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Climate Releaf</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 
 <body>
-
-
-<nav class="navbar navbar-expand-lg bg-body-transparent">
-	<div class="container-fluid">
-		<a class="navbar-brand" href="#"><img src="img/grå logo (1).webp" class="logo img-fluid"/></a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav ms-auto">
-				<li class="nav-item">
-					<a class="nav-link active fw-semibold" aria-current="page" href="#">SMÅ HANDLINGER</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active fw-semibold"  aria-current="page" href="#">SPØRGESKEMA</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active fw-semibold"  aria-current="page" href="#">TIKTOK</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active fw-semibold"  aria-current="page" href="#">OM OS</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active fw-semibold"  aria-current="page" href="#">BOOK TID</a>
-				</li>
-
-			</ul>
-		</div>
-	</div>
+<!-- Fixed-top navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/grå logo (1).webp" class="logo img-fluid" alt="Logo"/></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active fw-semibold" href="#">SMÅ HANDLINGER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="#">SPØRGESKEMA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="#">TIKTOK</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="#">OM OS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="#">BOOK TID</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
-<div class="iph d-block d-lg-none">
-	<img src="img/Forsideiph.webp" class="img-fluid"/>
+<!-- Indhold under navbar -->
+<div class="body-content">
+    <!-- Forsidebilleder -->
+    <div class="iph d-block d-lg-none">
+        <img src="img/Forsideiph.webp" class="img-fluid" alt="Forsidebillede - iPhone"/>
+    </div>
+
+    <div class="str d-none d-lg-block">
+        <img src="img/Forside.webp" class="img-fluid" alt="Forsidebillede - Desktop"/>
+    </div>
+
+
+    <div class="iph d-block d-lg-none bg-grå">
+        <p class="text-blå text-center fs-1 page1 pt-3">Hvorfor gør vi, som vi gør?</p>
+    </div>
+
+    <div class="str d-none d-lg-block bg-grå">
+        <p class="text-blå text-center fs-1 page1 pt-3">Hvorfor gør vi, som vi gør?</p>
+
+        <div class="container">
+            <div class="row">
+                <div class="hvorfor card-body bg-creme" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                    <p>hej</p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="str d-none d-lg-block">
-	<img src="img/Forside.webp" class="img-fluid" />
-</div>
 
-<div class="iph d-block d-lg-none bg-grå">
-	<div class="">
-		<p class="text-blå text-center fs-1 page1 pt-3">Hvorfor gør vi, som vi gør?</p>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
-	</div>
-</div>
-
-<div class="str d-none d-lg-block bg-grå">
-	<div class="">
-		<p class="text-blå text-center fs-1 page1 pt-3">Hvorfor gør vi, som vi gør?</p>
-
-	</div>
-
-</div>
-
-
-
-
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

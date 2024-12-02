@@ -48,3 +48,24 @@ body {
 	font-weight: bold;
 
 }
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.8); // Let gennemsigtighed
+  backdrop-filter: blur(5px); // Slør baggrunden (valgfrit)
+}
+
+
+.body-content {
+  padding-top: 70px; // Matcher navbar-højden
+}
+
+
+.str img, .iph img {
+  width: 100%;
+  height: auto;
+}
+
+.hvorfor{
+  width: 869px;
+  height: 416px;
+}
