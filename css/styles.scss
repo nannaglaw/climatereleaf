@@ -20,5 +20,11 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 // 5. Du kan lave styling her...
 
 .str{
-	width: 1440;
+	width: 1440px;
+	height: 820px;
+}
+
+.iph{
+	width: 390px;
+	height: 844px;
 }
