@@ -14,6 +14,7 @@ $custom-colors: (
         "blå": #77B5AE,
         "creme": #EFE5DA,
         "grå": #2D2D2D,
+        "lysgrå": #575656,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -41,4 +42,9 @@ body {
 
 .logo {
   width: 100px;
+}
+
+.page1{
+	font-weight: bold;
+
 }
