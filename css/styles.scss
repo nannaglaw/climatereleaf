@@ -17,7 +17,14 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "bootstrapComponents";
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
 // 5. Du kan lave styling her...
+
+body{
+	font-family: 'Inter', sans-serif;
+}
 
 .str{
 	width: 1440px;
