@@ -31,14 +31,13 @@ body {
 }
 
 
-
 .iph {
   width: 390px;
   height: 844px;
 }
 
 .logo {
-  width: 100px;
+  width: 80px;
 }
 
 .page1{
@@ -63,15 +62,11 @@ body {
 }
 
 .card-body {
-  height: 200px;
+  height: 350px;
+  width: 300px;
 }
 
 
-.skrald {
-  max-width: 10%;
-  height: auto;
-  margin-left: 600px;
-}
 
 
 
@@ -82,15 +77,13 @@ body {
     height: 820px;
   }
 
+  .logo {
+    width: 100px;
+  }
+
 .card-body {
-  height: 416px;
-}
-
-
-.skrald {
-  max-width: 10%;
-  height: auto;
-  margin-left: 600px;
+  width: 700px;
+  height: 300px;
 }
 
 }
