@@ -50,13 +50,13 @@ body {
 }
 
 .navbar {
-  background-color: rgba(255, 255, 255, 0.8); // Let gennemsigtighed
-  backdrop-filter: blur(5px); // Slør baggrunden (valgfrit)
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
 }
 
 
 .body-content {
-  padding-top: 70px; // Matcher navbar-højden
+  padding-top: 70px;
 }
 
 
@@ -65,7 +65,15 @@ body {
   height: auto;
 }
 
-.hvorfor{
-  width: 869px;
+
+.card-body {
   height: 416px;
 }
+
+.skrald {
+  max-width: 10%;
+  height: auto;
+  margin-left: 600px;
+}
+
+
