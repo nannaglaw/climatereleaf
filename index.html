@@ -5,7 +5,8 @@
     <title>Climate Releaf</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 
@@ -133,12 +134,13 @@
     </div>
 
     <div class="str iph bg-creme">
-
-        <div class="container quiz-container">
+        <div class="container">
             <p class="text-grå text-center fs-1 page1 pt-3">Hvilken meme er du udfra dine miljøbevidste valg?</p>
-            <div class="row g-4">
-                <div class="spørgsmål border border-2 border-blå ">
-                    <p class="h4 text-center py-3 py-lg-3 ">Hvor lang tid tager dine brusebad?</p>
+
+            <div class="row g-3"> <!-- Start én row -->
+                <!-- Første spørgsmål -->
+                <div class="spørgsmål border border-4 border-blå">
+                    <p class="h4 text-center py-3 py-lg-3">Hvor lang tid tager dine brusebad?</p>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="question1" id="mindre" data-value="glad">
                         <label class="form-check-label" for="mindre">Mindre end 5 min.</label>
@@ -151,24 +153,194 @@
                         <input class="form-check-input" type="radio" name="question1" id="ekstra" data-value="sur">
                         <label class="form-check-label" for="ekstra">Mellem 10-20 min</label>
                     </div>
+                </div>
 
+                <!-- Andet spørgsmål -->
+                <div class="spørgsmål border border-4 border-blå">
+                    <p class="h4 text-center py-3 py-lg-1">Hvordan transportere du dig til/fra skole?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question2" id="cykel" data-value="glad">
+                        <label class="form-check-label" for="cykel">Går eller cykler</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question2" id="bil" data-value="sur">
+                        <label class="form-check-label" for="bil">Bil eller knallert</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question2" id="offentlig" data-value="oki">
+                        <label class="form-check-label" for="offentlig">Offentlig (tog eller bus)</label>
+                    </div>
+                </div>
+
+                <div class="spørgsmål border border-3 border-blå">
+                    <p class="h4 text-center pt-3 pb-0 py-lg-1">Hvor tit spiser du mad der er over bedst før datoen?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question3" id="sanser" data-value="glad">
+                        <label class="form-check-label" for="sanser">Jeg bruger mine sanser og har derfor ikke noget i mod at spise det efter bedst før</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question3" id="noglegange" data-value="oki">
+                        <label class="form-check-label" for="noglegange">En gang i mellem men ikke medvilje</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question3" id="aldrig" data-value="sur">
+                        <label class="form-check-label" for="aldrig">Aldrig</label>
+                    </div>
                 </div>
 
 
+
+                <div class="spørgsmål border border-3 border-blå">
+                    <p class="h4 text-center pt-3 pb-0 py-lg-1">Hvor tit bruger du et låg når du laver mad i en gryde?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question4" id="always" data-value="glad">
+                        <label class="form-check-label" for="always">Hver gang jeg bruger en gryde til madlavning</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question4" id="kog" data-value="oki">
+                        <label class="form-check-label" for="kog">Kun når jeg bringer vandet i kog</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question4" id="never" data-value="sur">
+                        <label class="form-check-label" for="never">Aldrig</label>
+                    </div>
+                </div>
+                <div class="spørgsmål border border-3 border-blå">
+                    <p class="h4 text-center pt-3 pb-0 py-lg-1">Hvor tit køber du fast fashion?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question5" id="genbrug" data-value="glad">
+                        <label class="form-check-label" for="genbrug">Jeg går efter kun at købe genbrug og second hand</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question5" id="begge" data-value="oki">
+                        <label class="form-check-label" for="begge">Jeg køber både fast fashion og secondhand</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question5" id="kun" data-value="sur">
+                        <label class="form-check-label" for="kun">Det er det eneste jeg køber</label>
+                    </div>
+                </div>
+                <div class="spørgsmål border border-3 border-blå">
+                    <p class="h4 text-center pt-3 pb-0 py-lg-1">Hvor ofte syer du selv et hul i dit tøj, i stedet for at smide det ud?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question6" id="altid" data-value="glad">
+                        <label class="form-check-label" for="altid">Altid, jeg syntes det er det fedeste</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question6" id="sometimes" data-value="oki">
+                        <label class="form-check-label" for="sometimes">En gang i mellem når jeg synes det er det værd</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question6" id="nyt" data-value="sur">
+                        <label class="form-check-label" for="nyt">Aldrig, så hellere købe nyt</label>
+                    </div>
+                </div>
+                <div class="spørgsmål border border-3 border-blå">
+                    <p class="h4 text-center pt-3 pb-0 py-lg-1">Hvor tit holder du kødfrie dage?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question7" id="kødfri" data-value="glad">
+                        <label class="form-check-label" for="kødfri">Hver dag er en kødfri dag</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question7" id="etpar" data-value="oki">
+                        <label class="form-check-label" for="etpar">Jeg holder et par kødfrie dage om ugen</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question7" id="kød" data-value="sur">
+                        <label class="form-check-label" for="kød">Jeg spiser kød hver dag</label>
+                    </div>
+                </div>
+                <div class="spørgsmål border border-3 border-blå">
+                    <p class="h4 text-center pt-3 pb-0 py-lg-1">Hvilke slags ferie holder du mest?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question8" id="camping" data-value="glad">
+                        <label class="form-check-label" for="camping">Camping</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question8" id="køre" data-value="oki">
+                        <label class="form-check-label" for="køre">Køre</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question8" id="fly" data-value="sur">
+                        <label class="form-check-label" for="fly">Fly</label>
+                    </div>
+                </div>
+                <div class="spørgsmål border border-3 border-blå">
+                    <p class="h4 text-center pt-3 pb-0 py-lg-1">Hvor mange ting affaldssortere du?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question9" id="alt" data-value="glad">
+                        <label class="form-check-label" for="alt">Jeg affaldssortere alt (mad, plastik, pap og papir, metal)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question9" id="madaffald" data-value="oki">
+                        <label class="form-check-label" for="madaffald">Jeg affaldssortere kun madaffald (den grønne skraldespand)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question9" id="ikke" data-value="sur">
+                        <label class="form-check-label" for="ikke">Jeg affaldssortere ikke</label>
+                    </div>
+                </div>
+
+
+            </div> <!-- Slut row -->
+
+            <div class="text-center mt-3">
+                <button class="btn btn-primary" onclick="showResults()">Se svar</button>
             </div>
 
+            <!-- Område til at vise resultatet -->
+            <div id="result" class="mt-3 text-center">
+                <!-- Resultaterne vil blive vist her -->
+            </div>
 
         </div>
-
     </div>
 
+
+
+
 </div>
+
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init();
+</script>
+
+<script>
+    function showResults() {
+        // Find alle radioknapper
+        const radios = document.querySelectorAll('input[type="radio"]:checked');
+
+        // Opret en tæller for svarene
+        let results = {
+            glad: 0,
+            oki: 0,
+            sur: 0
+        };
+
+        // Iterer over alle valgte knapper og tælle de respektive værdier
+        radios.forEach(radio => {
+            const value = radio.getAttribute('data-value');
+            results[value]++;
+        });
+
+        // Bestem meme baseret på de opsamlede resultater
+        let meme = "Du er en ukendt meme!";
+        if (results.glad > results.oki && results.glad > results.sur) {
+            meme = "Du er en positiv og miljøbevidst meme!";
+        } else if (results.oki > results.glad && results.oki > results.sur) {
+            meme = "Du er en okay miljøvenlig meme!";
+        } else if (results.sur > results.glad && results.sur > results.oki) {
+            meme = "Du er en sur og mindre miljøbevidst meme!";
+        }
+
+        // Vis resultatet på siden
+        document.getElementById('result').innerHTML = `<h3>${meme}</h3><p>Glad: ${results.glad} | Oki: ${results.oki} | Sur: ${results.sur}</p>`;
+    }
 </script>
 
 </body>
