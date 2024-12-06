@@ -139,7 +139,7 @@
 
             <div class="row g-3"> <!-- Start én row -->
                 <!-- Første spørgsmål -->
-                <div class="spørgsmål border border-4 border-blå">
+                <div class="spørgsmål border border-4 border-blå col-12 col-lg-3">
                     <p class="h4 text-center py-3 py-lg-3">Hvor lang tid tager dine brusebad?</p>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="question1" id="mindre" data-value="glad">
@@ -156,7 +156,7 @@
                 </div>
 
                 <!-- Andet spørgsmål -->
-                <div class="spørgsmål border border-4 border-blå">
+                <div class="spørgsmål border border-4 border-blå col-12 col-lg-3">
                     <p class="h4 text-center py-3 py-lg-1">Hvordan transportere du dig til/fra skole?</p>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="question2" id="cykel" data-value="glad">
@@ -172,7 +172,7 @@
                     </div>
                 </div>
 
-                <div class="spørgsmål border border-3 border-blå">
+                <div class="spørgsmål border border-3 border-blå col-12 col-lg-3">
                     <p class="h4 text-center pt-3 pb-0 py-lg-1">Hvor tit spiser du mad der er over bedst før datoen?</p>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="question3" id="sanser" data-value="glad">
@@ -190,7 +190,7 @@
 
 
 
-                <div class="spørgsmål border border-3 border-blå">
+                <div class="spørgsmål border border-3 border-blå col-12 col-lg-3">
                     <p class="h4 text-center pt-3 pb-0 py-lg-1">Hvor tit bruger du et låg når du laver mad i en gryde?</p>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="question4" id="always" data-value="glad">
@@ -205,7 +205,7 @@
                         <label class="form-check-label" for="never">Aldrig</label>
                     </div>
                 </div>
-                <div class="spørgsmål border border-3 border-blå">
+                <div class="spørgsmål border border-3 border-blå col-12 col-lg-3">
                     <p class="h4 text-center pt-3 pb-0 py-lg-1">Hvor tit køber du fast fashion?</p>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="question5" id="genbrug" data-value="glad">
@@ -220,7 +220,7 @@
                         <label class="form-check-label" for="kun">Det er det eneste jeg køber</label>
                     </div>
                 </div>
-                <div class="spørgsmål border border-3 border-blå">
+                <div class="spørgsmål border border-3 border-blå col-12 col-lg-3">
                     <p class="h4 text-center pt-3 pb-0 py-lg-1">Hvor ofte syer du selv et hul i dit tøj, i stedet for at smide det ud?</p>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="question6" id="altid" data-value="glad">
@@ -235,7 +235,7 @@
                         <label class="form-check-label" for="nyt">Aldrig, så hellere købe nyt</label>
                     </div>
                 </div>
-                <div class="spørgsmål border border-3 border-blå">
+                <div class="spørgsmål border border-3 border-blå col-12 col-lg-3">
                     <p class="h4 text-center pt-3 pb-0 py-lg-1">Hvor tit holder du kødfrie dage?</p>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="question7" id="kødfri" data-value="glad">
@@ -250,7 +250,7 @@
                         <label class="form-check-label" for="kød">Jeg spiser kød hver dag</label>
                     </div>
                 </div>
-                <div class="spørgsmål border border-3 border-blå">
+                <div class="spørgsmål border border-3 border-blå col-12 col-lg-3">
                     <p class="h4 text-center pt-3 pb-0 py-lg-1">Hvilke slags ferie holder du mest?</p>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="question8" id="camping" data-value="glad">
@@ -265,7 +265,7 @@
                         <label class="form-check-label" for="fly">Fly</label>
                     </div>
                 </div>
-                <div class="spørgsmål border border-3 border-blå">
+                <div class="spørgsmål border border-3 border-blå col-12 col-lg-3">
                     <p class="h4 text-center pt-3 pb-0 py-lg-1">Hvor mange ting affaldssortere du?</p>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="question9" id="alt" data-value="glad">
@@ -310,38 +310,8 @@
     AOS.init();
 </script>
 
-<script>
-    function showResults() {
-        // Find alle radioknapper
-        const radios = document.querySelectorAll('input[type="radio"]:checked');
 
-        // Opret en tæller for svarene
-        let results = {
-            glad: 0,
-            oki: 0,
-            sur: 0
-        };
 
-        // Iterer over alle valgte knapper og tælle de respektive værdier
-        radios.forEach(radio => {
-            const value = radio.getAttribute('data-value');
-            results[value]++;
-        });
-
-        // Bestem meme baseret på de opsamlede resultater
-        let meme = "Du er en ukendt meme!";
-        if (results.glad > results.oki && results.glad > results.sur) {
-            meme = "Du er en positiv og miljøbevidst meme!";
-        } else if (results.oki > results.glad && results.oki > results.sur) {
-            meme = "Du er en okay miljøvenlig meme!";
-        } else if (results.sur > results.glad && results.sur > results.oki) {
-            meme = "Du er en sur og mindre miljøbevidst meme!";
-        }
-
-        // Vis resultatet på siden
-        document.getElementById('result').innerHTML = `<h3>${meme}</h3><p>Glad: ${results.glad} | Oki: ${results.oki} | Sur: ${results.sur}</p>`;
-    }
-</script>
 
 </body>
 </html>
