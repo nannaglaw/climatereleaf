@@ -2,7 +2,7 @@
 @import "../node_modules/bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
-$link-decoration: none;
+
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/variables";
@@ -30,6 +30,14 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+.tiktok {
+  transition: color 0.3s ease, transform 0.3s ease; /* Tilføjer en jævn overgang */
+}
+
+.tiktok:hover {
+  color: #ff0050 !important;
+  transform: scale(1.1); /* Gør teksten større */
+}
 
 .logo {
   width: 80px;
