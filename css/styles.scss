@@ -31,11 +31,6 @@ body {
 }
 
 
-.iph {
-  width: 390px;
-  height: 844px;
-}
-
 .logo {
   width: 80px;
 }
@@ -61,47 +56,15 @@ body {
   height: auto;
 }
 
-.card-body {
-  height: 350px;
-  width: 300px;
-}
-
-.spørgsmål {
-  border-radius: 10px;
-  width: 350px;
-  min-height: 320px;  /* Minimum højde, så div'ene ikke bliver for små */
-  height: auto; /* Gør højden dynamisk baseret på indholdet */
-  margin-left: 20px;
-  padding: 20px;
-}
-
 
 
 
 @media only screen and (min-width: 1020px) {
 
-  .str {
-    width: 1440px;
-    height: 820px;
-  }
 
   .logo {
     width: 100px;
   }
-
-  .card-body {
-    width: 700px;
-    height: 300px;
-  }
-
-  .spørgsmål {
-    border-radius: 10px;
-    width: 350px;
-    flex: 0 0 auto;
-    height: fit-content;
-  }
-
-
 
 
 
